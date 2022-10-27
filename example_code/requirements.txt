@@ -1,0 +1,13 @@
+coloredlogs
+numpy
+scipy
+librosa==0.8.1
+matplotlib>=3.4
+ipython
+ipykernel
+ipywidgets 
+tqdm
+numpy-stl
+torch>=1.7
+torchaudio>=0.7
+pylint

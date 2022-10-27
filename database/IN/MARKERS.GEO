@@ -1,0 +1,5 @@
+CORNERS
+;empty
+PLANES
+;empty
+MARKERS

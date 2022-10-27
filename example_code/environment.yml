@@ -1,0 +1,27 @@
+name: myenv
+channels:
+  - pytorch
+  - anaconda
+  - conda-forge
+  - defaults
+  - intel
+dependencies:
+  - python>=3.7
+  # - os
+  - coloredlogs
+  # - logging
+  # - json
+  - numpy
+  - scipy
+  - librosa=0.8.1
+  - matplotlib>=3.4
+  # - mpld3
+  - ipython
+  - ipykernel
+  - ipywidgets 
+  - tqdm
+  - numpy-stl
+  # - math
+  - pytorch>=1.7
+  - torchaudio>=0.7
+  - pylint
