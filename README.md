@@ -19,12 +19,12 @@ Microphone nodes and omnidirectional sources are distributed evenly in a grid. E
 ## Example
 A database loader example can be found in the [notebook](example_code/load_database.ipynb). It shows the node angle computation, positions of the nodes and receiver with their respective IDs as well as examples on how to load the impulse responses and use them for a convolution.
 
-### Run example code
+### [Run example code](example_code/load_database.ipynb)
 If you want to try out the example code yourself, you can run the Python or IPython Notebook file.
 * ```python3 example_code/load_database.py```
 * Or run the notebook file ```example_code/load_database.ipynb```
 
-### Scenario of coupled rooms
+### [Scenario of coupled rooms](example_code/coupled_rooms.ipynb)
 * ```python3 example_code/coupled_rooms.py```
 * Or view the notebook file ```example_code/coupled_rooms.ipynb```
 
