@@ -1,7 +1,9 @@
 # ASN Database - Database of Simulated Room Impulse Responses for Acoustic Sensor Networks Deployed in Complex Multi-Source Acoustic Environments
 Authors:
 * Rene Glitza
+* Luca Becker
 * Alexandru Nelus
+* Rainer Martin
 
 _Institute of Communication Acoustics, Ruhr University Bochum, Germany_
 
@@ -19,12 +21,12 @@ Microphone nodes and omnidirectional sources are distributed evenly in a grid. E
 ## Example
 A database loader example can be found in the [notebook](example_code/load_database.ipynb). It shows the node angle computation, positions of the nodes and receiver with their respective IDs as well as examples on how to load the impulse responses and use them for a convolution.
 
-### [Run example code](example_code/load_database.ipynb)
+### Run example code
 If you want to try out the example code yourself, you can run the Python or IPython Notebook file.
 * ```python3 example_code/load_database.py```
 * Or run the notebook file ```example_code/load_database.ipynb```
 
-### [Scenario of coupled rooms](example_code/coupled_rooms.ipynb)
+### Scenario of coupled rooms
 * ```python3 example_code/coupled_rooms.py```
 * Or view the notebook file ```example_code/coupled_rooms.ipynb```
 
@@ -36,7 +38,7 @@ You can create a virtual python environment with all necessary packages from the
 ### Setup new virtual Python environment
 * ```python3 -m venv env```
 * Activate Python environment (```source env/bin/activate```)
-* ```pip install -r requirements.txt```
+* ```pip install -r example_code/requirements.txt```
 
 ### Update existing anaconda environment
 You can update your own virtual python environment with all necessary packages from the anaconda environment file.
@@ -47,18 +49,17 @@ You can update your own virtual python environment with all necessary packages f
 You can download different versions of the database depending on your needs.
 
 ### Versions
-<!-- * Apartment [with humans](other/3D_Models/ASN_humans.stl) in the rooms
+* Apartment [without humans](other/3D_Models/ASN_humans.stl) in the rooms
   * Version v3.2 <br>
-  [![DOI:10.5281/zenodo.7257829](https://zenodo.org/badge/doi/10.5281/zenodo.4018965.svg)](https://doi.org/10.5281/zenodo.7257829) -->
+  * Added: Binaural (2-Ch) and B-format (4-Ch) RIRs
+  * Fix: WAV Version has correct scaling
+  [![DOI:10.5281/zenodo.7257829](https://zenodo.org/badge/doi/10.5281/zenodo.4018965.svg)](https://doi.org/10.5281/zenodo.7257829)
 * Apartment [without humans](other/3D_Models/ASN_empty.stl) in the rooms
   * Version v3.1 <br>
+  * Attention: The amplitude of the WAV files is clipped inside the critical distance
   [![DOI:10.5281/zenodo.7257829](https://zenodo.org/badge/doi/10.5281/zenodo.4018965.svg)](https://doi.org/10.5281/zenodo.7257829)
 
 ## Data repository overview
-    ├──── Database_Readme.md		# Readme file
-    ├──── LICENSE			        # License file
-    ├──── other/			        # Folder containing the 3D Model
-        └──── 3D_Models/            # Folder containing the 3D Model
     ├──── IN/			            # Folder containing the simulation input
         ├──── CATT.MD9/		        # Project option file
         ├──── MASTER.GEO/		    # Main Geometry file including the surface properties
@@ -110,6 +111,7 @@ This file contains the latest information for a specific database version.
       ├──── coupled_rooms.py	    # Code with coupled room scenario
       ├──── coupled_rooms.ipynb	    # Notebook of previous code
       ├──── environment.yml	        # Anaconda environment file
+      ├──── requirements.txt        # Python requirements file
     ├──── database/		            # Folder containing sample metadata
         ├──── IN/			        # Folder containing the simulation input
           ├──── CATT.MD9/		    # Project option file
@@ -130,8 +132,26 @@ This file contains the latest information for a specific database version.
 
 * First public release
 
+#### 1.1.0 / 2023-06-15
+
+* Fix: RIR amplitude in WAV files clipped inside critical distance
+* Compressed file versions have filetype and rir type in filename
+* Added: Binaural (2-Ch) and B-format (4-Ch) RIRs
+
 ## License
 [GNU General Public License v3.0](LICENSE)
+
+## How to cite
+If you use this database in your research, please cite it as follows:
+```bibtex
+@InProceedings{Glitza2023,
+  author    = {Glitza, Rene and Becker, Luca and Martin, Rainer},
+  title     = {Database of Simulated Room Impulse Responses for Acoustic Sensor Networks Deployed in Complex Multi-Source Acoustic Environments},
+  year      = {to appear, 2023},
+  booktitle = {31th European Signal Processing Conference (EUSIPCO)},
+  doi       = {10.5281/zenodo.7257829},
+}
+```
 
 ## References
 <a id="1">[1]</a> 

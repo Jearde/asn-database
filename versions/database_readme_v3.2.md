@@ -1,5 +1,5 @@
 # ASN Database
-Version: v3.1
+Version: v3.2
 
 [![DOI:10.5281/zenodo.7257829](https://zenodo.org/badge/doi/10.5281/zenodo.4018965.svg)](https://doi.org/10.5281/zenodo.7257829)
 
@@ -45,6 +45,3 @@ Version: v3.1
 
 ### Simulation Details
 * Sample rate: 44100 Hz
-
-## Konwn Issues
-* Amplitude of wave files are clipped inside the critical distance. This behavior ist not present in the BIN or MAT version.
