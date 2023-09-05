@@ -46,18 +46,34 @@ You can update your own virtual python environment with all necessary packages f
 * ```conda env update --file environment.yml --prune```
 
 ## Download
-You can download different versions of the database depending on your needs.
+You can download different versions of the database depending to your needs.
+The database is available in the following formats:
+* WAV: RIRs as WAV files, normalized to a maximum amplitude of 1
+* BIN: RIRs as binary files, 32-bit, little endian, 44.1 kHz
+* MAT: RIRs as MATLAB files
 
 ### Versions
-* Apartment [without humans](other/3D_Models/ASN_humans.stl) in the rooms
-  * Version v3.2 <br>
+<!-- * Apartment [without humans](other/3D_Models/ASN_humans.stl) in the rooms
+  * Version v3.3 <br>
   * Added: Binaural (2-Ch) and B-format (4-Ch) RIRs
   * Fix: WAV Version has correct scaling
+  [![DOI:10.5281/zenodo.7257829](https://zenodo.org/badge/doi/10.5281/zenodo.4018965.svg)](https://doi.org/10.5281/zenodo.7257829) -->
+* Apartment [without humans](other/3D_Models/ASN_humans.stl) in the rooms
+  * Version v3.2 <br>
+  * Fix: WAV Version has no amplitude clipping scaling
   [![DOI:10.5281/zenodo.7257829](https://zenodo.org/badge/doi/10.5281/zenodo.4018965.svg)](https://doi.org/10.5281/zenodo.7257829)
 * Apartment [without humans](other/3D_Models/ASN_empty.stl) in the rooms
   * Version v3.1 <br>
   * Attention: The amplitude of the WAV files is clipped inside the critical distance
   [![DOI:10.5281/zenodo.7257829](https://zenodo.org/badge/doi/10.5281/zenodo.4018965.svg)](https://doi.org/10.5281/zenodo.7257829)
+
+### RIR Versions
+Different exported RIRs types will be available soon.
+These include omnidirectional, binaural and B-format RIRs.
+These are highlighted as follows:
+* `OMNI`: Omnidirectional RIRs (1-Channel) [available]
+* `BIN`: Binaural RIRs (2-Channel) [soon available]
+* `BF`: B-format RIRs (5-Channel) [soon available]
 
 ## Data repository overview
     ├──── IN/			            # Folder containing the simulation input
@@ -132,11 +148,13 @@ This file contains the latest information for a specific database version.
 
 * First public release
 
-#### 1.1.0 / 2023-06-15
+#### 1.0.1 / 2023-09-05
 
 * Fix: RIR amplitude in WAV files clipped inside critical distance
+
+#### 1.1.0 / tbd
 * Compressed file versions have filetype and rir type in filename
-* Added: Binaural (2-Ch) and B-format (4-Ch) RIRs
+* Added: Binaural and B-format RIRs
 
 ## License
 [GNU General Public License v3.0](LICENSE)
