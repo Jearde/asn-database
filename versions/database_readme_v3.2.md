@@ -1,7 +1,7 @@
 # ASN Database
 Version: v3.2
 
-[![DOI:10.5281/zenodo.7257829](https://zenodo.org/badge/doi/10.5281/zenodo.4018965.svg)](https://doi.org/10.5281/zenodo.7257829)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8320987.svg)](https://doi.org/10.5281/zenodo.8320987)
 
 ## Description
 * Room:
