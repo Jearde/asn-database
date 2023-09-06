@@ -33,7 +33,7 @@ import torch.nn as nn
 # %% Constants
 # Folder where the Database is saved (Folder "OUT" needs to be selected)
 OUTPUT_FOLDER = '../database/OUT'
-OUTPUT_FOLDER = "/mnt/nfs/Databases/ASN_Database_Custom_3.1_sorted/OUT"
+OUTPUT_FOLDER = "/mnt/nfs/Databases/ASN_Database_3.2_sorted/WAV_Version/OUT"
 # Name of the metadata JSON file
 JSON_FILENAME = 'RIR.json'
 # Name of one simulation scenario data file (there are multiple)
