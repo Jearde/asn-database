@@ -61,11 +61,11 @@ The database is available in the following formats:
 * Apartment [without humans](other/3D_Models/ASN_humans.stl) in the rooms
   * Version v3.2 <br>
   * Fix: WAV Version has no amplitude clipping scaling
-  [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8320987.svg)](https://doi.org/10.5281/zenodo.8320987)
+  * Download: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8320987.svg)](https://doi.org/10.5281/zenodo.8320987)
 * Apartment [without humans](other/3D_Models/ASN_empty.stl) in the rooms
   * Version v3.1 <br>
   * Attention: The amplitude of the WAV files is clipped inside the critical distance
-  [![DOI:10.5281/zenodo.7257829](https://zenodo.org/badge/doi/10.5281/zenodo.4018965.svg)](https://doi.org/10.5281/zenodo.7257829)
+  * Download: [![DOI:10.5281/zenodo.7257829](https://zenodo.org/badge/doi/10.5281/zenodo.4018965.svg)](https://doi.org/10.5281/zenodo.7257829)
 
 <!-- ### RIR Versions
 Different exported RIRs types will be available soon.
