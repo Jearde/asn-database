@@ -58,7 +58,7 @@ The database is available in the following formats:
   * Added: Binaural (2-Ch) and B-format (4-Ch) RIRs
   * Fix: WAV Version has correct scaling
   [![DOI:10.5281/zenodo.7257829](https://zenodo.org/badge/doi/10.5281/zenodo.4018965.svg)](https://doi.org/10.5281/zenodo.7257829) -->
-* Apartment [without humans](other/3D_Models/ASN_humans.stl) in the rooms
+* Apartment [with humans](other/3D_Models/ASN_humans.stl) in the rooms
   * Version v3.2 <br>
   * Fix: WAV Version has no amplitude clipping scaling
   * Download: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8320987.svg)](https://doi.org/10.5281/zenodo.8320987)
@@ -162,14 +162,23 @@ This file contains the latest information for a specific database version.
 ## How to cite
 If you use this database in your research, please cite it as follows:
 ```bibtex
-@InProceedings{Glitza2023,
-  author    = {Glitza, Rene and Becker, Luca and Martin, Rainer},
-  title     = {Database of Simulated Room Impulse Responses for Acoustic Sensor Networks Deployed in Complex Multi-Source Acoustic Environments},
-  year      = {to appear, 2023},
-  booktitle = {31th European Signal Processing Conference (EUSIPCO)},
-  doi       = {10.5281/zenodo.7257829},
+@INPROCEEDINGS{Glitza2023Database,
+  author={Glitza, Rene and Becker, Luca and Nelus, Alexandru and Martin, Rainer},
+  booktitle={2023 31st European Signal Processing Conference (EUSIPCO)}, 
+  title={Database of Simulated Room Impulse Responses for Acoustic Sensor Networks Deployed in Complex Multi-Source Acoustic Environments}, 
+  year={2023},
+  volume={},
+  number={},
+  pages={246-250},
+  doi={10.23919/EUSIPCO58844.2023.10290083}
 }
+
 ```
+
+## Acknowledgements
+
+This work has been supported by the German Research Foundation (DFG) -
+project numbers 282835863 and 429873205.
 
 ## References
 <a id="1">[1]</a> 
